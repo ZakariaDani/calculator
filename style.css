@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h3 {
+    color: white;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(222, 26%, 31%);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button, input[type="button"] {
+    background-color:hsl(30, 25%, 89%);
+    border: none;
+    outline: none ;
+    margin: 10px;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    font-size: 32px;
+    border-radius: 10px;
+    color: hsl(221, 14%, 31%);
+    text-align: center;
+}
+input[type="button"]:active, #blue:active {
+    background-color: hsl(221, 14%, 31%);
+    color: hsl(30, 25%, 89%);
+    transform: translateY(2px);    
+    box-shadow: 0 3px hsl(28, 16%, 65%);
+    transition: all .2s ease;
+}
+#blue:active {
+    box-shadow: 0 3px hsl(224, 28%, 35%);
+    transition: all .2s ease;
+}
+#res{
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 7px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    outline: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    width: 413px;
+    padding: 5px;
+    text-align: right;
+}
+.button {
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 7px;
+}
+#blue {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
+#equ:active {
+    box-shadow:0 3px hsl(6, 70%, 34%);
+    transition: all .2s ease;
+}
+span {
+    font-size: 15px;
+    text-align:center;
+}
+#equ, .reset {
+    width: 165px;
+}
+#equ {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(225, 21%, 49%);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.rd {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+p {
+    font-size: 10px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]+label {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input[type="radio"]+label>div {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+}
+input[type="radio"]:checked+label>#divfo1 {
+    background-color: hsl(6, 63%, 50%);
+    transition: background .3s ease;
+}
+input[type="radio"]:checked+label>#divfo2 {
+    background-color: hsl(25, 98%, 40%);
+    transition: background .3s ease;
+}
+input[type="radio"]:checked+label>#divfo3 {
+    background-color: hsl(176, 100%, 44%);
+    transition: background .3s ease;
+}
+#rd2 {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    height: 16px;
+    padding: 5px;
+}

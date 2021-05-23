@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <section>
+        <form name="fo">
+            <header>
+                <h3 id="title">Calculator</h3>
+                <div class="rd">
+                    <p id="th">THEME</p>
+                    <div id="rd2">
+                        <input id="ra1" type="radio" name="rd1" onclick="g1()">
+                        <label for="ra1"><div id="divfo1"></div></label>
+                        <input id="ra2" type="radio" name="rd1" onclick="g2()">
+                        <label for="ra2"><div id="divfo2"></div></label>
+                        <input id="ra3" type="radio" name="rd1" onclick="g3()">
+                        <label for="ra3"><div id="divfo3"></div></label>
+                    </div>
+                </div>
+            </header>
+        <input id="res" name="in1" type="text">
+        <div class="button" id="button">
+            <div class="rw1">
+                <input class="b1" type="button" value="7" onclick="f('7')">
+                <input class="b1" type="button" value="8" onclick="f('8')">
+                <input class="b1" type="button" value="9" onclick="f('9')">
+                <button  type="button" id="blue" value="DEL" onclick="f('D')"><span>DEL</span></button>
+            </div>
+            <div>
+                <input class="b1" type="button" value="4" onclick="f('4')">
+                <input class="b1" type="button" value="5" onclick="f('5')">
+                <input class="b1" type="button" value="6" onclick="f('6')">
+                <input class="b1" type="button" value="+" onclick="f('+')">
+            </div>
+            <div>
+                <input class="b1" type="button" value="1" onclick="f('1')">
+                <input class="b1" type="button" value="2" onclick="f('2')">
+                <input class="b1" type="button" value="3" onclick="f('3')">
+                <input class="b1" type="button" value="-" onclick="f('-')">
+            </div>
+            <div>
+                <input class="b1" type="button" value="." onclick="f('.')">
+                <input class="b1" type="button" value="0" onclick="f('0')">
+                <input class="b1" type="button" value="/" onclick="f('/')">
+                <input class="b1" type="button" value="x" onclick="f('x')">
+            </div>
+            <div>
+                <button type="button" class="reset" id="blue" value="RESET" onclick="f('C')"><span>RESET</span> </button>
+                <input id="equ" type="button" value="=" onclick="f('=')">
+            </div>
+        </div>
+        </form>
+    </section>
+</body>
+</html>
